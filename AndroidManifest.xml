@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cloud"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:name="com.example.cloud.LiveSdkSampleApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.cloud.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.cloud.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.cloud.STARTINGPOINT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+           android:name="com.example.cloud.FileUpload"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.cloud.FileUpload" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+         <activity
+            android:name="com.example.cloud.MetisMeHomePage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.cloud.MetisMeHomePage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                
+
+                
+                 </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.example.cloud.Accounts"
+            android:label="Accounts" >
+            <intent-filter>
+                <action android:name="com.example.cloud.Accounts" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+        <activity
+            android:name="com.example.cloud.button_selection"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.cloud.button_selection" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.cloud.DropboxMainScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.cloud.DropboxMainScreen" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.cloud.filelist"
+            android:label="Document List" >
+            <intent-filter>
+                <action android:name="com.example.cloud.filelist" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.cloud.SkydriveFolderList"
+            android:label="Skydrive List" >
+            <intent-filter>
+                <action android:name="com.example.cloud.SkydriveFolderList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.cloud.DropboxFolderList"
+            android:label="Dropbox List" >
+            <intent-filter>
+                <action android:name="com.example.cloud.DropboxFolderList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.cloud.CentralizedSearch"
+            android:label="Centralized Search" >
+            <intent-filter>
+                <action android:name="com.example.cloud.CentralizedSearch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+        
+        <activity
+      android:name="com.dropbox.client2.android.AuthActivity"
+      android:launchMode="singleTask"
+      android:configChanges="orientation|keyboard">
+      <intent-filter>
+        <!-- Change this to be db- followed by your app key -->
+        <data android:scheme="db-qwhxbi7bea749s3" />
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
+        
+        
+        
+    </application>
+
+</manifest>

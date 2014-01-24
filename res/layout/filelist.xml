@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+     android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/filepath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:textSize="14sp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/back"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="98dp"
+        android:layout_height="33dp"
+        android:text="Back" />
+    
+ <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal" >
+ 
+ <EditText
+     android:id="@+id/inputSearch"
+     android:layout_width="202dp"
+     android:layout_height="wrap_content"
+     android:hint="Search File."
+     android:inputType="textVisiblePassword" />
+ 
+ <Button
+     android:id="@+id/search"
+     android:layout_width="98dp"
+     
+     android:layout_height="40dp"
+     android:text="Search" />
+
+</LinearLayout>
+<ListView
+    android:id="@+id/skydrive_list"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" />
+
+</LinearLayout>

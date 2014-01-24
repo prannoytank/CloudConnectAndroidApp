@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical"
+      android:paddingLeft="5dip"
+      android:paddingRight="5dip"
+      android:paddingTop="8dip"
+     android:paddingBottom="8dip"
+>
+  <ImageView android:id="@+id/icon"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent" 
+      
+      android:layout_alignParentLeft="true"
+  	  android:layout_centerVertical="true"
+      />
+
+  <TextView android:id="@+id/Cloud_Service"
+  android:textSize="16sp" 
+  android:paddingLeft="5dp"
+  android:layout_width="fill_parent" 
+  android:layout_height="fill_parent"
+  android:layout_toRightOf="@+id/icon"
+  android:layout_centerVertical="true"
+  
+ >
+</TextView>
+
+  <TextView
+      android:id="@+id/EmailId"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      
+      android:textSize="12sp" 
+      android:layout_centerVertical="true"
+  	  android:layout_alignParentRight="true"
+      
+      android:textAppearance="?android:attr/textAppearanceSmall" />
+
+  </RelativeLayout>
